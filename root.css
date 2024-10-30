@@ -1,0 +1,64 @@
+main {
+  flex: 1;
+}
+:root {
+  --primary-color: #f6f6f6;
+  --secondary-color: #232b2b;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
+}
+h1:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+h1:not(:hover) {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(5px);
+}
+h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+h3 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 1rem 0;
+}
+.icon {
+  font-size: 2rem;
+  margin: auto;
+  color: var(--primary-color);
+  font-weight: lighter;
+}
+p {
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5%;
+  height: 50vh;
+}
+footer {
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+}
+button{
+  color: var(--primary-color);
+  font-weight: bolder;
+}

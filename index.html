@@ -6,7 +6,286 @@
     <title>rafalvu</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="root.css" />
-
+    <link rel="stylesheet" href="style_portfolio.css">
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>rafalvu</h1>
+      <nav class="nav-page">
+        <ul>
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-contact">
+        <ul>
+          <li>
+            <a href="mailto:rafal.walczewski00@gmail.com"
+              ><i class="icon fas fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""><i class="icon fa-brands fa-spotify"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rafalwalczewski/"></a
+            ><i class="icon fa-brands fa-linkedin"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <nav class="nav-sidebar" id="nav-sidebar">
+      <ul>
+        <li><a href="index.html">O mnie</a></li>
+        <li><a href="about.html">Portfolio</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="mailto:rafal.walczewski00@gmail.com"
+            ><i class="icon fas fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href=""><i class="icon fa-brands fa-spotify"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rafalwalczewski/"></a
+          ><i class="icon fa-brands fa-linkedin"></i>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="landing">
+        <div class="text-animation">
+            <h2>Rafał Walczewski</h2>
+          <div class="words">
+            <h2>Web Development</h2>
+            <h2>App Development</h2>
+            <h2>Audio Production</h2>
+          </div>
+        </div>
+        <a href="#about">
+          <div class="arrow"><i class="fa-solid fa-arrow-down-long"></i></div>
+        </a>
+      </section>
+      <section id="about">
+        <!-- Tab links -->
+         <div class="description"> <img class="profile-picture" src="profile-picture.jpg" alt="profile picture">
+          <h3>O mnie</h3></div>
+       
+        <div class="tab">
+          <button class="tablinks active" id="it-about-button" onclick="openCity(event, 'it')">IT</button>
+          <button class="tablinks" id="audio-about-button" onclick="openCity(event, 'audio')">
+            Audio
+          </button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="it" class="tabcontent">
+          <p>
+            Zajmuję się tworzeniem responsywnych projektów i funkcjonalności stron internetowych oraz aplikacji. Posiadam solidną znajomość HTML, CSS, JavaScript oraz React, a także zdolność do szybkiego przyswajania nowych technologii. Wykazuję się skutecznością w identyfikowaniu i rozwiązywaniu złożonych problemów związanych z programowaniem.
+          </p>
+          <h3>Umiejętności</h3>
+          <p>
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>RestAPI</li>
+              <li>Responsive Design</li>
+              <li>Problem Solving</li>
+              <li>Wordpress</li>
+            </ol>
+          </p>
+          <h3>Doświadczenie</h3>
+          <p>
+           Mam rok doświadczenia w tworzeniu stron internetowych dla klientów z branz takich jak handel nieruchomościami, studio nagrań czy gabinety psychoterapii. Moje projekty cechuje estetyka, funkcjonalność oraz zgodność z najnowszymi standardami web developmentu. Nieustannie się rozwijam w kierunku poznawania nowych technologii takich jak Node.js czy TypeScript.
+          </p>
+        </div>
+
+        <div id="audio" class="tabcontent">
+    
+          <p>
+            Tworzę muzykę, nagrywam i miksuję. Poza pracą realizatora w studiu
+            nagrań, dzielę się wiedzą oraz doświadczeniem na indywidualnych
+            lekcjach. Moja współpraca z klientami odywa się na wielu
+            płaszczyznach: realizacja dźwięku, postprodukcja, produkcja muzyki
+            oraz wiele innych. Cechuje mnie indywidualne podejście do każdego
+            zlecenia oraz jakość spełniająca wymogi standardu branży audio.
+            Jestem absolwentem SAE Institute w Glasgow oraz Akademii Muzycznej
+            im. Karola Szymanowskiego w Katowicach.
+          </p>
+          <h3>Umiejętności</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id
+            aspernatur doloremque! Natus iure ea aliquam laborum nemo! Accusamus
+            officiis aspernatur optio asperiores modi excepturi, dicta id
+            necessitatibus nam perferendis!
+          </p>
+          <h3>Lekcje</h3>
+          <p>
+            Jeśli chcesz zacząć przygodę z tworzeniem autorskich kompozycji lub udoskonalić swój warsztat, to zapraszam do kontaktu.
+
+            Pracując z dziesiątkami uczniów zauważyłem, że kluczowe jest uważne wysłuchanie potrzeb danej osoby. Czasami jest to robienie hip-hopowych beatów dla siebie, czasami nauczenie się jak realizować gitarowe dema w domu, a czasami przygotowanie materiałów edukacyjnych dla dzieci w szkole. W każdej z tych sytuacji byłem w stanie przygotować indywidualny tok nauczania oraz zestaw narzędzi potrzebny do samodzielnego pogłębiania wiedzy i pasji dla tworzenia.
+            
+            Najwięcej lekcji udzielam w Ableton Live, natomiast jestem również biegły w programach DAW Reaper oraz Pro Tools.
+          </p>
+        </div>
+
+        <a href="#portfolio">
+          <div class="arrow"><i class="fa-solid fa-arrow-down-long"></i></div>
+        </a>
+      </section>
+      <section id="portfolio">
+         <!-- Tab links -->
+         <h3>Portfolio</h3>
+         <div class="tab">
+          <button class="tablinks active" id="it-portfolio-button" onclick="openCity(event, 'it-portfolio')">IT</button>
+          <button class="tablinks" id="audio-portfolio-button" onclick="openCity(event, 'audio-portfolio')">
+            Audio
+          </button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="it-portfolio" class="tabcontent">
+  
+            <div class="ag-courses_box">
+              <div class="portfolio-item">
+                <a href="https://homeestates.pl" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+          
+                  <div class="ag-courses-item_title">
+                  Home Estates
+                  </div>
+          
+                  <div class="ag-courses-item_date-box">
+                    HTML | CSS | SCSS | JavaScript | API | Node.js
+                  </div>
+                </a>
+              </div>
+          
+              <div class="portfolio-item">
+                <a href="https://nonagram.pl/cennik" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+          
+                  <div class="ag-courses-item_title">
+                    Podcast Calculator
+                  </div>
+          
+                  <div class="ag-courses-item_date-box">
+                    Custom CSS & JavaScript
+                  </div>
+                </a>
+              </div>
+          
+              <div class="portfolio-item">
+                <a href="https://lokumstudio.com" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+          
+                  <div class="ag-courses-item_title">
+                   Lokum Studio
+                  </div>
+          
+                  <div class="ag-courses-item_date-box">
+                    Wordpress
+                
+                  </div>
+                </a>
+              </div>
+          
+              <div class="portfolio-item">
+                <a href="https://github.com/rafalvu/5_questions_test" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+          
+                  <div class="ag-courses-item_title">
+                    Test 5 pytań
+                  </div>
+          
+                  <div class="ag-courses-item_date-box">
+                    HTML | CSS | JavaScript | React
+                  </div>
+                </a>
+              </div>        
+            </div>
+          </div>
+
+          <div id="audio-portfolio" class="tabcontent">
+            <div class="ag-courses_box">
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zJk3HJUfEus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Realizacja wokali dla jan-rapowanie
+                </div>
+              </div>
+          
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3Y36ihPc4Uc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Produkcja muzyczna | Realizacja dźwięku | Miks | Mastering
+                </div>
+              </div>
+          
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/950HukfbYm0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Produkcja muzyczna | Realizacja dźwięku | Miks | Mastering
+                </div>
+              </div>
+          
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pTKVHobgaXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Realizacja wokali | Miks | Mastering
+                </div>
+              </div>
+          
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t7ONBB6F0tE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Realizacja dźwięku | Miks | Mastering
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KfXD5vh3CpA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ag-courses-item_bg"></div>
+                <div class="ag-courses-item_date-box">
+                  Produkcja Muzyczna | Realizacja wokali
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 rafalvu</p>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/10d31c5d6d.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+    integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </html>
