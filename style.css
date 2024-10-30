@@ -1,0 +1,20 @@
+
+
+/* CSS gradient: second layer */
+.second-layer {
+    width: 250px;
+    height: 250px;
+    background: 
+      linear-gradient(306deg, rgb(41, 142, 172), rgba(0,0,0,0));
+    /* filter: contrast(220%) brightness(800%); */
+}
+
+/* Resulting CSS */
+body {
+    width: fit-content;
+    height: fit-content;
+    filter: contrast(220%) brightness(800%);
+    background: 
+      linear-gradient(306deg, rgb(41, 142, 172), rgba(0,0,0,0)),
+      url('filter.svg'); /* Update the path to the SVG file */
+}
