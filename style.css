@@ -24,7 +24,7 @@
   box-shadow: 0 2rem 2rem #00000080;
   min-height: 200px;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
@@ -33,7 +33,6 @@
 .panel {
   display: none;
   animation: fadein 0.8s;
-  
 }
 @keyframes fadein {
   from {
@@ -82,7 +81,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10%;
+  position: fixed; /* Fix the header to the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it is above other elements */
+  padding: 1rem 10%; /* Adjust padding as needed */
 }
 a {
   text-decoration: none;
@@ -131,45 +134,6 @@ a {
   transition: transform 0.3s ease-in-out;
   transform: translateY(5px);
 }
-.nav-sidebar {
-  position: fixed;
-  top: 0;
-  right: -190px; /* Start off-screen */
-  width: 190px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  transition: right 0.5s ease; /* Add transition for the right property */
-}
-.hamburger {
-  display: none; /* Hide by default, show on smaller screens */
-  cursor: pointer;
-  font-size: 24px;
-  padding: 10px;
-  color: var(--primary-color);
-}
-.nav-sidebar.active {
-  display: block;
-  right: 0;
-}
-#landing {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-#about {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-#portfolio {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 .banner {
   position: relative;
 }
@@ -203,26 +167,4 @@ a {
   margin: 0 auto;
   display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .nav-page,
-  .nav-contact {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    list-style: none;
-    padding: auto;
-    margin: 20% 1rem;
-  }
-  li {
-    padding: 10px;
-  }
 }
