@@ -34,6 +34,11 @@
   display: none;
   animation: fadein 0.8s;
 }
+
+.panel.active {
+  display: block;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -51,8 +56,7 @@
 .radio {
   display: none;
 }
-#one:checked ~ .panels #one-panel,
-#two:checked ~ .panels #two-panel,
+
 #three:checked ~ .panels #three-panel,
 #four:checked ~ .panels #four-panel {
   display: block;
