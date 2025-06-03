@@ -4,6 +4,7 @@ main {
 :root {
   --primary-color: #f6f6f6;
   --secondary-color: #232b2b;
+  --background-color: #5459AC;
 }
 h1 {
   font-size: 2rem;
@@ -145,5 +146,8 @@ ol {
   }
   li {
     padding: 10px;
+  }
+  #about, #portfolio{
+    height: auto;
   }
 }
